@@ -1,0 +1,351 @@
+@font-face {
+    font-family: 'basier_circlesemibold';
+    src: url('basiercircle-semibold-webfont.eot');
+    src: url('basiercircle-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('basiercircle-semibold-webfont.woff2') format('woff2'), url('basiercircle-semibold-webfont.woff') format('woff'), url('basiercircle-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'basier_circleregular';
+    src: url('basiercircle-regular-webfont.eot');
+    src: url('basiercircle-regular-webfont.eot?#iefix') format('embedded-opentype'), url('basiercircle-regular-webfont.woff2') format('woff2'), url('basiercircle-regular-webfont.woff') format('woff'), url('basiercircle-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap');
+/* * {
+    border-style: solid;
+    border-color: rgb(95, 95, 95);
+    border-width: 1px;
+} */
+
+svg {
+    width: 75px;
+    padding-right: 20px;
+    fill: rgb(255, 255, 255)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'basier_circleregular';
+    font-size: .9rem;
+}
+
+h3 {
+    font-family: 'basier_circlesemibold';
+    font-size: .9rem;
+}
+
+h4 {
+    font-family: 'basier_circlesemibold';
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    display: flex;
+    width: 90%;
+    padding: 50px 0 50px 0;
+    margin: auto;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: rgb(90, 90, 90);
+    /* old IE */
+    background-color: rgb(90, 90, 90);
+    /* Modern Browsers */
+}
+
+.header_image {
+    background-image: url("IMG_1657.jpg");
+    /* background-image: url("“I\ Need\ More\ Patience”\ Spell.gif"); */
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header_image_info {
+    position: absolute;
+    width: 90%;
+    text-align: right;
+    font-family: 'basier_circlesemibold';
+    font-size: .9rem;
+    color: white;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    margin: auto;
+}
+
+.site_title {
+    font-family: 'basier_circlesemibold';
+    width: 100%;
+    letter-spacing: .5px;
+    font-size: .9rem;
+}
+
+.site_nav {
+    font-family: 'basier_circleregular';
+    font-size: .9rem;
+    width: 100%;
+    text-align: right;
+}
+
+.site_nav a {
+    padding-left: 25px;
+}
+
+.site_nav a:hover, .site_nav .active {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+.site_nav_mobile {
+    display: none;
+}
+
+.project_header {
+    color: rgb(85, 85, 85);
+    margin: auto;
+    padding: 50px 0 25px 0;
+}
+
+.project_footer {
+    color: rgb(20, 20, 20);
+    margin: auto;
+    text-align: right;
+    padding: 25px 0 25px 0;
+}
+
+.project_footer a {
+    opacity: .5;
+    font-family: 'basier_circlesemibold';
+    font-size: .7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.project_footer a:hover {
+    opacity: 1;
+}
+
+.main_element {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.project_container {
+    width: 70%;
+    padding-right: 125px;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.sidebar {
+    width: 15%;
+}
+
+.sidebar_header {
+    color: rgb(85, 85, 85);
+    margin: auto;
+    padding: 50px 0 0px 0;
+}
+
+.sidebar_content {
+    font-family: 'basier_circleregular';
+    font-size: .9rem;
+    text-align: justify;
+}
+
+.sidebar_content img {
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    width: 100%;
+    font-family: 'basier_circlesemibold';
+    font-size: .9rem;
+    margin-top: 50px;
+}
+
+footer svg {
+    fill: white;
+    width: 75px;
+    padding-right: 20px;
+    height: 25px
+}
+
+.footer {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 75px 0 75px 0;
+}
+
+.footer_title {
+    font-family: 'basier_circlesemibold';
+    font-size: .9rem;
+    letter-spacing: .5px;
+    width: 100%;
+}
+
+.footer_nav {
+    width: 100%;
+    text-align: right;
+}
+
+.footer_nav a {
+    line-height: 1.5rem;
+    opacity: .5;
+}
+
+.footer_nav a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: right;
+    right: 25px;
+    margin-top: 30px;
+}
+
+.overlay_content hr {
+    width: 20px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'basier_circleregular';
+    font-size: 1.5rem;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 12px;
+    right: 32px;
+    font-size: 40px;
+}
+
+/* @media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 32px;
+    }
+} */
+
+@media only screen and (max-width: 728px) {
+    header {
+        padding: 25px 0 25px 0;
+    }
+    svg {
+        width: 50px;
+    }
+    .site_nav {
+        display: none;
+    }
+    .site_nav_mobile {
+        display: initial;
+        margin: auto;
+    }
+    .site_nav_mobile svg {
+        width: 18px;
+    }
+    .project_container {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .sidebar {
+        width: 100%
+    }
+    .sidebar_content img {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 729px) {
+    .project_container {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .sidebar {
+        width: 100%
+    }
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    padding: 0px 0 0px 0;
+    margin: auto;
+    justify-content: left;
+}
+
+.project_module {
+    padding: 20px 50px 20px 0;
+    /* text-align: center; */
+}
+
+.project_module a.title {
+    font-size: 2.5rem;
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    line-height: 10px;
+}
+
+.project_module a.title:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+.project_module a.author {
+    font-family: 'Libre Baskerville';
+    font-style: italic;
+    font-size: 1rem;
+    color: rgb(102, 102, 102);
+}
